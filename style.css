@@ -1,0 +1,188 @@
+
+:root {
+    --rang-yashil:blue;
+    --rang-qora: #151515;
+    --rang-kulrang: #242424;
+  }
+  
+  body {
+    background-color: var(--rang-qora);
+    color: white;
+  
+    /* google dan font olib qo'yish */
+    font-family: sans-serif;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header,
+  section,
+  footer,
+  hr {
+    width: min(100% - 16px, 1000px);
+    margin-inline: auto;
+  }
+  
+  .ikki-chetda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media(width <550px){
+  .ikki-chetda{
+  flex-direction: column;
+
+  }
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: 900;
+    background-image:linear-gradient(45deg,red,hsl(240, 100%, 50%));
+background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  
+  .linklar {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+  }
+  
+  .ism {
+    /* gradient text uchun */
+background-image:linear-gradient(45deg,red,hsl(240, 100%, 50%));
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+
+    /* pasdagi chiziq uchun */
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--rang-yashil);
+
+    
+  }
+
+  
+
+  
+  .haqimda p {
+    font-size: 20px;
+  
+    /* kichiklashtirish uchun */
+    max-width: 50ch;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  h2{
+    font-size: 60px;
+    font-weight: 900px;
+    margin-block:20px;
+    }
+
+  @media(width <550px){
+  h1{
+  font-size: 50px;
+  }
+  h2{
+  font-size: 40px;
+  }
+  }
+
+.link{
+text-decoration: underline;
+text-underline-offset: 10px;
+text-decoration-color:var(--rang-yashil);
+text-decoration-thickness: 2px;
+text-transform:uppercase ;
+font-weight: bold;
+padding: 0;
+}
+section{
+margin-block: 50px;
+}
+.mahorat{
+display: grid;
+grid-template-columns:   1fr;
+gap: 24px;
+}
+
+@media(width > 500px){
+  .mahorat{
+  grid-template-columns: 1fr 1fr;
+
+  }
+}
+@media(width > 800px){
+  .mahorat{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.mahorat h3{
+font-size: 40px;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.lohalar{
+display: grid;
+grid-template-columns:  1fr;
+gap:  32px;
+margin-top: 50px;
+}
+@media(width >600px ){
+.loyhalar{
+grid-template-columns: 1fr 1fr;
+}
+}
+img{
+width: 100%;
+display: block;
+border-radius: 8px;
+}
+
+.lohalar h3{
+text-transform: uppercase;
+font-size:20px;
+}
+.loyhalar ul{
+list-style-type:none;
+display: flex;
+gap: 24px;
+padding-left: 0;
+text-transform: uppercase;
+}
+
+.murojat {
+display: grid;
+grid-template-columns:  1fr;
+gap: 32px;
+
+}
+@media(width >700px ){
+.murojat{
+
+grid-template-columns: 1fr 1fr;}
+}
+.murojat h2{
+margin-block: 0;
+
+
+}
+.murojat p{
+max-width: 45ch;
+margin-bottom: 24px;}
+hr{
+  border-color:red;
+
+}
